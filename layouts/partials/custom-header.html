@@ -1,0 +1,17 @@
+<header style="background: linear-gradient(135deg, #084E67, #4D7C0F); padding: 20px; color: #F9FAFB; position: sticky; top: 0; z-index: 1000; transition: all 0.3s ease;">
+  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+    <div class="site-brand">
+      <a href="/" style="color: #F9FAFB; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.5rem;">Kechita</a>
+    </div>
+    <nav class="menu">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}" class="menu-item" style="color: #F9FAFB; margin: 0 15px; text-decoration: none; transition: color 0.3s; font-family: 'Inter', sans-serif;">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <button id="chat-toggle" style="background: #D4A373; border: none; padding: 10px 20px; border-radius: 25px; color: #F9FAFB; cursor: pointer; transition: transform 0.2s;">Ask Us!</button>
+  </div>
+</header>
+<style>
+  .menu-item:hover { color: #D4A373; transform: translateY(-2px); }
+  @media (max-width: 768px) { .menu { display: none; } .site-brand, #chat-toggle { font-size: 1rem; } }
+</style>
