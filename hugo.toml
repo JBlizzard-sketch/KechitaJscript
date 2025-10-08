@@ -1,0 +1,119 @@
+baseURL = "https://kechita-poc.netlify.app/"
+languageCode = "en-us"
+title = "Kechita: Your Growth, Our Pride"
+theme = "PaperMod"
+
+[params]
+description = "Empowering Kenyan entrepreneurs with silky-smooth micro-loans and support."
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButton = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+ShowAllPostsInIndex = false
+readingTime = true
+author = "Kechita Team"
+assets:
+  favicon = "/images/favicon.ico"
+  tagline = "Silky micro-loans for mwananchi pride"
+
+[menu]
+  [[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "loans"
+  name = "Loan Products"
+  url = "/loans/"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "apply"
+  name = "Apply Now"
+  url = "/apply/"
+  weight = 40
+
+  [[menu.main]]
+  identifier = "success-stories"
+  name = "Success Stories"
+  url = "/success-stories/"
+  weight = 50
+
+  [[menu.main]]
+  identifier = "impact"
+  name = "Impact Report"
+  url = "/impact/"
+  weight = 60
+
+  [[menu.main]]
+  identifier = "why-us"
+  name = "Why Choose Us"
+  url = "/why-us/"
+  weight = 70
+
+  [[menu.main]]
+  identifier = "blog"
+  name = "Blog Hub"
+  url = "/blog/"
+  weight = 80
+
+  [[menu.main]]
+  identifier = "faqs"
+  name = "FAQs"
+  url = "/faqs/"
+  weight = 90
+
+  [[menu.main]]
+  identifier = "resources"
+  name = "Resources"
+  url = "/resources/"
+  weight = 100
+
+  [[menu.main]]
+  identifier = "team"
+  name = "Team"
+  url = "/team/"
+  weight = 110
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 120
+
+  [[menu.main]]
+  identifier = "privacy"
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 130
+
+  [[menu.main]]
+  identifier = "terms"
+  name = "Terms of Service"
+  url = "/terms/"
+  weight = 140
+
+  [[menu.main]]
+  identifier = "careers"
+  name = "Careers"
+  url = "/careers/"
+  weight = 150
+
+[markup]
+  [markup.highlight]
+    noClasses = false
