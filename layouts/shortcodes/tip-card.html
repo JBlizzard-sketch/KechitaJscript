@@ -1,0 +1,8 @@
+<div class="card" x-data="{ expanded: false }" style="transition: all 0.3s ease;">
+  <h3 style="margin: 0;">{{ .Get "title" }}</h3>
+  <p style="margin: 10px 0;">{{ .Get "content" }}</p>
+  <button @click="expanded = !expanded" style="background: #D4A373; border: none; padding: 5px 10px; border-radius: 5px; color: #F9FAFB; cursor: pointer;">{{ expanded ? 'Less' : 'More' }}</button>
+  <div x-show="expanded" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="margin-top: 10px;">
+    {{ .Get "extra" | default "" }}
+  </div>
+</div>
